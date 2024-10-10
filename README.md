@@ -77,7 +77,7 @@ B = \left[\begin{matrix}
     \end{matrix}\right]
 $$
 
-The treatment of boundaries and grid partitioning is consistent with the approach mentioned in the implicit algorithm.
+The treatment of boundaries and grid partitioning is consistent with the approach mentioned in the explicit algorithm.
 
 ## Results
 
