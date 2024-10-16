@@ -10,7 +10,7 @@ plt.rcParams['font.family'] = 'Times New Roman'
 def FundamentalSolution():
     M = 1
     D = 0.1
-    t = np.array([1/12*pi, 1/4*pi, 4/pi, pi, 2*pi, 80*pi])
+    t = np.array([1/12*pi, 1/4*pi, 4/pi, pi, 2*pi])
     x = np.arange(-5, 5.01, 0.01)
     c = np.zeros((t.shape[0], x.shape[0]))
 
@@ -18,7 +18,7 @@ def FundamentalSolution():
         c[t_i, :] = M/sqrt(4*pi*D*t[t_i])*exp(-x**2/(4*D*t[t_i]))
 
     plt.figure()
-    labels = [r'$1/12\pi$', r'$1/4\pi$', r'$4/\pi$', r'$\pi$', r'$2\pi$', r'$80\pi$']
+    labels = [r'$1/12\pi$', r'$1/4\pi$', r'$4/\pi$', r'$\pi$', r'$2\pi$']
     colors = ['goldenrod', 'orange', 'yellowgreen', 'green', 'teal', 'r']
     for t_i in range(t.shape[0]):
         plt.plot(x, c[t_i, :], c=colors[t_i], label=labels[t_i])
