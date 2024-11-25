@@ -1,3 +1,10 @@
+"""
+@ A program for solving 1D diffusion equation
+@ author ZimoJupiter
+@ w.zimo@outlook.com
+@ date 25 Nov 2024
+@ license MIT License
+"""
 import numpy as np
 from numpy import pi, exp, sqrt
 import matplotlib.pyplot as plt
